@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CRUD App</title>
+</head>
+<body>
+  <h1>CRUD App</h1>
+
+  <!-- Create User Form -->
+  <div id="create-form">
+    <h2>Create User</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <select id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <button onclick="createUser()">Create</button>
+  </div>
+
+  <!-- Users List -->
+  <div id="users-list">
+    <h2>Users List</h2>
+    <label>Show: </label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+    <input type="text" id="search" placeholder="Search by Name">
+    <ul id="users"></ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
